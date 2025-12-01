@@ -1,0 +1,14 @@
+target/
+.mvn/
+*.log
+.idea/
+*.iml
+out/
+.vscode/
+.DS_Store
+Thumbs.db
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
