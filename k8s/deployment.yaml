@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-task-manager
+  labels:
+    app: java-task-manager
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: java-task-manager
+  template:
+    metadata:
+      labels:
+        app: java-task-manager
+    spec:
+      containers:
+        - name: java-task-manager
+          image: java-task-manager:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
