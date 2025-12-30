@@ -1,4 +1,4 @@
-# 🚀 *Java Task Manager*
+#  *Java Task Manager*
 
 A clean end-to-end *DevOps + Backend* project built with **Java 17**, **Spring Boot**, **Docker**, **k3s Kubernetes**, **Terraform IaC** and **GitHub Actions CI**.
 
@@ -11,7 +11,7 @@ The project contains:
 
 ---
 
-## ⭐ *Project Overview*
+##  *Project Overview*
 
 The **Java Task Manager** exposes a simple REST API for creating and listing tasks.  
 It is fully containerized and can run locally inside a Kubernetes cluster, or theoretically be deployed to AWS using the included Terraform infrastructure.
@@ -26,7 +26,7 @@ This project demonstrates:
 
 ---
 
-## 🏗️ *Architecture*
+##  *Architecture*
 
 ```
 Java Task Manager
@@ -43,7 +43,7 @@ Java Task Manager
 
 ---
 
-## 📁 *Repository Structure*
+##  *Repository Structure*
 
 ```
 java-task-manager/
@@ -74,7 +74,7 @@ java-task-manager/
 
 ---
 
-## ⚙️ *Backend - Spring Boot API*
+##  *Backend - Spring Boot API*
 
 Main endpoints:
 
@@ -87,7 +87,7 @@ The service keeps tasks in memory and provides a small, clean REST interface.
 
 ---
 
-## 🐳 *Docker*
+##  *Docker*
 
 Multi-stage build:
 
@@ -98,7 +98,7 @@ docker run -p 8080:8080 java-task-manager:latest
 
 ---
 
-## ☸️ *Local Kubernetes - k3s*
+##  *Local Kubernetes - k3s*
 
 ```
 kubectl apply -f k8s/
@@ -113,7 +113,7 @@ http://localhost:8080/api/tasks
 
 ---
 
-## ☁️ *Terraform - AWS Infrastructure (IaC)*
+##  *Terraform - AWS Infrastructure (IaC)*
 
 The project includes full AWS infrastructure definition using Terraform:
 
@@ -126,7 +126,7 @@ Terraform files describe the full cloud environment, allowing the application to
 
 ---
 
-## 🔄 *Continuous Integration - GitHub Actions*
+##  *Continuous Integration - GitHub Actions*
 
 A CI workflow runs automatically on every push and pull request to:
 
@@ -138,7 +138,7 @@ This ensures the application compiles successfully for every change pushed to th
 
 ---
 
-## 🎯 *Summary*
+##  *Summary*
 
 This repository brings together backend development, containerization, Kubernetes orchestration, Infrastructure as Code, and CI automation.  
 It serves as a complete and well-structured example of modern DevOps practices applied to a Java application.
